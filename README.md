@@ -1,18 +1,30 @@
 dataset:
+
 DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8
+
 DYJetsToLL_M-50_TuneCH3_13TeV-madgraphMLM-herwig7
 
+
 https://cms-pdmv-prod.web.cern.ch/mcm/public/restapi/requests/get_setup/PPD-RunIISummer20UL17wmLHEGEN-00005
+
 https://cms-pdmv-prod.web.cern.ch/mcm/public/restapi/requests/get_setup/JME-RunIISummer20UL18wmLHEGEN-00024
 
+
 fragment files:
+
 https://cms-pdmv-prod.web.cern.ch/mcm/public/restapi/requests/get_fragment/PPD-RunIISummer20UL17wmLHEGEN-00005
+
 https://cms-pdmv-prod.web.cern.ch/mcm/public/restapi/requests/get_fragment/JME-RunIISummer20UL18wmLHEGEN-00024
 
+
 CMSSW:
+
 export SCRAM_ARCH=slc7_amd64_gcc700 
+
 source /cvmfs/cms.cern.ch/cmsset_default.sh 
+
 cmsrel CMSSW_10_6_28_patch1
+
 
 cmsDriver.py Configuration/GenProduction/python/PPD-RunIISummer20UL17wmLHEGEN-00005-fragment.py \
 --python_filename py8_cfg.py \
@@ -27,6 +39,7 @@ cmsDriver.py Configuration/GenProduction/python/PPD-RunIISummer20UL17wmLHEGEN-00
 --era Run2_2018 \
 --no_exec --mc -n 10
 
+
 cmsDriver.py Configuration/GenProduction/python/JME-RunIISummer20UL18wmLHEGEN-00024-fragment.py \
 --python_filename hw7_cfg.py \
 --eventcontent NANOAODGEN \
@@ -39,6 +52,7 @@ cmsDriver.py Configuration/GenProduction/python/JME-RunIISummer20UL18wmLHEGEN-00
 --geometry DB:Extended \
 --era Run2_2018 \
 --no_exec --mc -n 10
+
 
 
 get info of Z boson from muons at LHE level:
