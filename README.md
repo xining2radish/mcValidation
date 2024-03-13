@@ -1,6 +1,6 @@
-dataset: \
-DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8 \
-DYJetsToLL_M-50_TuneCH3_13TeV-madgraphMLM-herwig7 \
+dataset:
+DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8
+DYJetsToLL_M-50_TuneCH3_13TeV-madgraphMLM-herwig7
 
 https://cms-pdmv-prod.web.cern.ch/mcm/public/restapi/requests/get_setup/PPD-RunIISummer20UL17wmLHEGEN-00005 \
 https://cms-pdmv-prod.web.cern.ch/mcm/public/restapi/requests/get_setup/JME-RunIISummer20UL18wmLHEGEN-00024 \
